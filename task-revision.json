@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:471112656325:task-definition/app2:8",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:471112656325:task-definition/app2:10",
     "containerDefinitions": [
         {
             "name": "app2",
-            "image": "471112656325.dkr.ecr.us-east-1.amazonaws.com/app2",
+            "image": "471112656325.dkr.ecr.us-east-1.amazonaws.com/app2:d970bd347f94b0456cab753ba60abe9c5878e4ea",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,10 +16,8 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -37,7 +35,7 @@
     "taskRoleArn": "arn:aws:iam::471112656325:role/EcsTaskRole",
     "executionRoleArn": "arn:aws:iam::471112656325:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 8,
+    "revision": 10,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,7 +81,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-08-08T01:17:28.079Z",
+    "registeredAt": "2024-08-08T01:30:12.950Z",
     "registeredBy": "arn:aws:iam::471112656325:user/agent007",
     "tags": []
 }
